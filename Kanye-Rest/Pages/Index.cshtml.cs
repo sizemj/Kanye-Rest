@@ -33,7 +33,9 @@ namespace Kanye_Rest.Pages
             string responseContent = "[]";
             try
             {
-                Uri baseURL = new Uri(BaseUrl);
+                //Hard coded url
+                Uri baseURL = new Uri("https://api.kanye.rest");
+
 
                 HttpClient client = new HttpClient();
 

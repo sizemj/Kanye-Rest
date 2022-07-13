@@ -9,6 +9,7 @@ namespace Kanye_Rest.Pages
 
         public void OnGet(string result)
         {
+            result = result.Replace("{\"quote\":", "").Replace("}", "");
             ResponseBody = result;
         }
     }
